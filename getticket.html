@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getticket</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icons" type="text/css" href="https://icons8.com/icon/85162/youtube">
+	<style type="text/css">
+		body{
+			font-family: "Outfit", sans-serif;
+			
+			 margin: 0;
+			 padding: 0;
+			
+		}
+		.upperclass li{
+			display: inline;
+			margin-right: 15px;
+			color: white;
+		}
+		.upperclass li a{
+			text-decoration:none;
+			margin-left: 3%;
+			color: white;
+			font-size: 20px;
+
+		}
+		nav div{
+	
+		    background-color:black;
+			margin-top: 0;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			opacity: 0.95;
+		}
+
+		nav{
+			background-color: black;
+			margin-top: 0;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			
+		     
+		}
+
+		.upperclass li #get{
+			
+			color: white;
+			background-color: rgb(238,80,7);
+			border-radius: 30px;
+			padding: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-right: 20px;
+			margin-left:140px;
+			font-weight: bold;
+		}
+		.hy{
+			margin-top: 7%;
+			text-align: center;
+			font-size: 50px;
+		}
+		
+		.internaldiv1{
+			margin-top: 1px;
+			border: 5px dotted black;
+			width: 600px;
+			margin-left: 100px;
+			border-radius: 50px;
+			padding-right: 15px;	
+			padding-top: 15px;
+			padding-bottom: 15px;
+			height: 300px;
+			padding-left: 30px;
+			float: left;
+		}
+		.internaldiv2{
+			margin-top: 1px;
+			border: 5px dotted black;
+			width: 600px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-right: 100px;
+			border-radius: 50px;
+			height: 300px;
+			padding-left: 30px;
+			float: right;
+		}
+		.internaldiv1  ul{
+			margin-bottom: 125px;
+
+		}
+		.internaldiv2  ul{
+			margin-bottom: 125px;
+
+		}
+		.internaldiv1  ul li {
+			width: 200px;
+			height: 30px;
+			float: left;
+			
+		}
+		
+		.internaldiv2  ul li {
+			width: 200px;
+			height: 30px;
+			float: left;
+			
+		}
+		.bottomdiv1{
+			background-color: rgb(238,80,7);
+			height: 120px;
+			padding-right: 10px;
+			padding-left: 10px;
+			margin-left: 0;
+		    margin-right: 0;
+			
+			margin-bottom: 0;
+			overflow: hidden;
+			margin-top: 0;
+			width: 1499px;
+			
+		}
+		.bottomdiv2{
+			background-color: black;
+			margin:0;
+			width: 1510px;
+			margin-left: 0;
+			margin-right: 0;	
+			padding: 4px;
+			height: 300px;
+		}
+		 
+          .bottomdiv1 ul li{
+          
+        	background-color: rgb(238,80,7);
+        	float: left;
+        	margin-right: 15px;
+        	
+        	margin-top: 30px;
+        	list-style-type: none;
+        }
+        .bottomdiv2 ul{
+        	margin-left: 64px;
+        }
+         .bottomdiv2 ul li a{
+         	text-decoration: none;
+         	color: white;
+         	font-size: 17px;
+         }
+        .bottomdiv2 ul li{
+          
+        	float: left;
+           margin-right:15px;
+        	list-style-type: none;
+        }
+        .icon:hover{
+        	transform: rotate(90deg);
+          background-color: yellow;
+        }
+        .icon{
+          background-color: rgb(238,80,7);
+          border-radius: 15px;
+          width: 20px;
+          text-align: center;
+          padding: 5px;
+          
+        }
+        .centerdiv{
+             background-image: url(body.jpeg);
+			 background-position: center;
+			 background-repeat: no-repeat;
+			 background-size: cover;
+			 /*width: 700px;*/
+			 height: 900px;
+			 position: relative;
+
+        }
+        .centerdiv1{
+           position: absolute;
+           width: 620px;
+           top: 15%;
+           height: 680px;
+            margin-left: 30%;
+        	border:1px solid white;
+        	
+        	border-radius: 30px;
+        	padding:10px;
+        	background-color: white;
+
+        }
+        input[type=text]{
+        	margin-left: 8%;
+        }
+         input[type=text],input[type=Email]
+        {        
+        	padding: 17px;
+        	margin-right: 5px;
+
+        	margin-bottom: 22px;
+        	border-radius: 5px;
+        	border:1px solid #ced4da;;
+        	outline: none;
+        	color: grey;
+        	font-size: 15px;
+        }
+        input[type=number]{
+        	margin-left: 8%;
+        	padding: 17px;
+        	margin-right: 5px;
+        	margin-bottom: 22px;
+        	border-radius: 5px;
+        	border:1px solid #ced4da;;
+        	outline: none;
+        	color: grey;
+        	font-size: 15px;
+        	width: 488px;
+        }
+        input[type=submit]{
+        	margin-top: 15px;
+        	margin-left: 32%;
+        	padding-top: 15px;
+        	padding-right: 55px;
+        	padding-left: 55px;
+        	padding-bottom: 15px;
+        	border-radius: 100px;
+        	color: white;
+        	border:1px solid rgb(238,80,7);
+        	background-color: rgb(238,80,7);
+        	font-size: 18px;
+        	margin-bottom: 0;
+        	font-weight: 600;
+        	cursor: pointer;
+
+        }
+        input[type=submit]:hover{
+        	background-color: red;
+        }
+
+
+        textarea{
+        	border:1px solid #ced4da;
+        	padding: 5px;
+        	color: grey;
+        	font-size: 15px;
+        	margin-bottom: 22px;
+        	margin-left: 8%;
+        	border-radius: 5px;
+        }
+        .ticket1{
+        	padding: 17px;
+        	margin-right: 5px;
+        	margin-bottom: 22px;
+        	margin-top: 10px;
+        	border-radius: 5px;
+        	border:1px solid #ced4da;;
+        	outline: none;
+        	color: grey;
+        	width: 225px;
+        	font-size: 15px;
+        	float: left;
+        }
+         input[type=text]:focus , input[type=Email]:focus, textarea:focus,input[type=number]:focus 
+         {
+         	outline: 3px solid #80bfff;
+         	shape-outside: margin-box;
+         	border:1px solid #66c2ff;
+
+         }
+         .upperclass li:hover a{
+			color: red;
+		}
+		.upperclass li:visited a{
+        color: orange;
+    }
+    
+		
+	</style>
+</head>
+<body>
+      <nav >
+      	<div>
+        <ul class="upperclass">
+        	<li style="margin-right: 270px;font-size: 25px;margin-left: 50px;font-weight: bold;"><a href="home.html">Festival İsmi</a></li>
+        	<li><a href="home.html">Homepage</a></li>
+        	<li><a href="Calander.html">Calender</a></li>
+        	<li><a href="price.html">Prices</a></li>
+        	<li><a href="contactusweb.html">Contact Us</a></li>
+        	<li><a href="getticket.html" id="get">Get Tickets</a></li>
+        </ul>
+        </div>
+      </nav>
+      <div class="centerdiv">
+      	<div class="centerdiv1">
+
+      		<h1  style="font-size: 45px;text-align: center;">You can start here!!</h1>
+      		<input type="text" placeholder="Name" size="26" required>
+      		<input type="Email" placeholder="Email Address" size="25" required><br>
+      		<input type="text" placeholder="Phone No" size="61" required pattern="[0-9]{11}"><br>
+      		<label style="font-size: 25px;margin-left: 8%;"><strong>Select Ticket Type</strong></label><br>
+      		<div class="ticket1" style="margin-left: 8%;">
+      		<input type="radio" name="Ticket" id="Eary"><label for="Eary" >Eary bird $120</label>
+      		</div>
+      		<div class="ticket1">
+      		<input type="radio" name="Ticket" id="Standard"><label for="Standard">Standard $240</label></div>
+
+      		<input type="number" name="" placeholder="number of tickets" required>
+      		<textarea placeholder="Additional requests" cols="60" rows="5" required></textarea>
+      		<input type="submit" value="Buy a ticket" >
+      	</div>
+      	
+      </div>
+    
+  <footer class="bottomdiv">
+      	<div class="bottomdiv1">
+      	    <ul>
+      	    	<h1 style="float: left;	margin-right: 55%;color: white;font-size: 40px;margin-left: 4%;padding: 0">Festival Name</h1>
+      	    	<li class="icon"><i class="fa fa-facebook" style="color:#ffffff"></i></li>
+      	    	<li class="icon"><i class="fa fa-twitter" style="color: #ffffff"></i></li>
+      	    	<li class="icon"><i class="fa fa-instagram" style="color:#ffffff"></i></li>
+      	    	<li class="icon"><i class="fa fa-youtube" style="color: #ffffff;"></i></li>
+      	    	<li class="icon"><i class="fa fa-pinterest" style="color: #ffffff"></i></li>
+      	    </ul> 
+      	</div>
+      	   
+      	 <div class="bottomdiv2">
+      	<h2 style="color: yellow;float: left;margin-top: 75px;margin-right: 35%;margin-left: 105px">Links</h2>
+      	<h2 style="color: yellow;float: left;margin-top: 75px;margin-right: 15%">Have a Question?</h2>
+      	<h2 style="color: yellow;;margin-top: 75px;">Women</h2>
+      	<ul>
+      		<li><a href="#">Home Page</a></li>
+      		<li><a href="#">My Home</a></li>
+      		<li><a href="#">Artists</a></li>
+      		<li><a href="#">Prices</a></li>
+      		<li><a href="#">Contact Us</a></li>
+      	</ul>
+        <a href="#" style="margin-left: 170px;text-decoration: none;font-size: 20px;color: white;float: left;margin-right: 16%;"><span style="font-size: 28px">050-080-0760</span><br><span style="margin-left: 2%">hello@company.com</span></a>
+        <p style="color: white;font-size: 20px">Sukkur Hall,Sindh</p>
+        <p style="color: white;margin-top: 90px;margin-left:35%;font-size: 20px">Copyright © 2023 Made by Web Team</p>
+        </div>
+    </footer>
+      
+</body>
+</html>

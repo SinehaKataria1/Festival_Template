@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icons" type="text/css" href="https://icons8.com/icon/85162/youtube">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  overflow-y: auto; /* This enables vertical scrolling */
+}
+		.upperclass li{
+			display: inline;
+			margin-right: 15px;
+			color: white;
+		}
+		.upperclass li a{
+			text-decoration:none;
+			margin-left: 3%;
+			color: white;
+			font-size: 20px;
+
+		}
+		nav div{
+	
+		    background-color:transparent;
+			margin-top: 0;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			
+		}
+
+		nav{
+			background-color: transparent;
+			margin-top: 0;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+      z-index: 1;
+		/*	opacity: 0.8;*/
+			
+		     
+		}
+    .upperclass li:hover a{
+      color: red;
+    }
+    .upperclass li:visited a{
+      color: orange;
+    }
+    .upperclass li:active a{
+      color: orange;
+    }
+
+		.upperclass li #get {
+			
+			color: white;
+			background-color:rgb(238,80,7);
+			border-radius: 30px;
+			border:1px solid rgb(238,80,7);
+			padding: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+		margin-right: 20px;
+      margin-left:140px;
+      cursor: pointer;
+			font-weight: bold;
+		}
+		.hy{
+			margin-top: 7%;
+			text-align: center;
+			font-size: 45px;
+      font-weight: 500px;
+			margin-bottom: 30px;
+      color: white;
+		}
+		
+	
+		.bottomdiv1{
+			background-color: rgb(238,80,7);
+			height: 120px;
+			padding-right: 10px;
+			padding-left: 10px;
+			margin-left: 0;
+		    margin-right: 0;
+			
+			margin-bottom: 0;
+			overflow: hidden;
+			margin-top: 7%;
+			/*width: 1499.5px;*/
+			/*width: 100%;*/
+     /* width: auto;
+			*/
+		}
+		
+      .bottomdiv2 {
+      background-color: black;
+      margin: 0;
+     /* width: 1502px;*/
+      margin-left: 0;
+      margin-right: 0;  
+      padding: 4px;
+      height: 300px;
+      overflow-y: auto; 
+  }
+          .bottomdiv1 ul li{
+          
+        	background-color: rgb(238,80,7);
+        	float: left;
+        	
+          margin-right: 15px;
+        	margin-top: 30px;
+        	list-style-type: none;
+        }
+        .bottomdiv2 ul{
+        	margin-left: 64px;
+        	margin-right: 0;
+        }
+
+         .bottomdiv2 ul li a{
+         	text-decoration: none;
+         	color: white;
+         	font-size: 17px;
+         }
+       
+        .bottomdiv2 ul li{
+          
+        	float: left;
+           margin-right:15px;
+        	list-style-type: none;
+        }
+       .v1 video{
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+          width: 100%;
+          height: 100%;
+         object-fit: cover;
+          z-index: -1;
+        }
+        /*.v1 video::-webkit-media-controls {
+           display: none !important;
+           }*/
+        .v1{
+           position: relative;
+             width: 100%;
+              height: 750px; 
+            overflow: hidden;
+            bottom: 0;
+        }
+        .centeral{
+          margin-top: 15%;
+          margin-bottom: 0;
+        }
+        .centeral button:hover{
+          background-color: red;
+        }
+         .centeral button{
+          border-radius: 20px;
+          border:1px solid rgb(238,80,7);
+          background-color: rgb(238,80,7);
+          padding: 10px;
+          color: white;
+          font-size: 20px;
+          margin-top: 10px;
+          margin-left: 10%;
+          margin-right:35%;
+          cursor: pointer;
+         }
+        .centeral p ,.centeral h1{
+          text-align: center;
+          color: white;
+        }
+        .centeral h1{
+          margin-top: 0;
+          font-size: 75px;
+        }
+        .centeral h2{
+          margin-top: 12%;
+          float: left;
+          color: white;
+          margin-left: 70px;
+          margin-right: 20%;
+        }
+        .centeral ul{
+          margin-top: 12%;
+        }
+        .centeral ul li
+        {
+         margin-right: 20px;
+          float: left;
+          color: white;
+        }
+        .icon:hover{
+          transform: rotate(90deg);
+          background-color: yellow;
+        }
+        .icon{
+          background-color: rgb(238,80,7);
+          border-radius: 15px;
+          width: 20px;
+          text-align: center;
+          padding: 5px;
+          
+        }
+        .centeral1{
+         background-image: url(body.jpeg);
+         margin-top: 0;
+         padding: 4px;
+         color: white;
+          height: 670px;
+
+        }
+        .centeral2{
+          width: 520px;
+          height: 400px;
+          margin-left: 120px;
+          margin-top: 90px;
+          float: left;
+          margin-right: 100px;
+
+
+        }
+        .centeral2 h3{
+           padding: 15px;
+           padding-bottom: 0;
+
+        }
+        .centeral2 h1{
+          padding: 15px;
+          font-size: 45px;
+
+        }
+        .centeral2 p{
+          padding: 15px;
+          padding-top: 5px;
+          color: grey;
+
+        }
+        .centeral3{
+        margin-top: 150px;
+        background-image: url(home1.jpeg);
+        width: 600px;
+        height: 400px;
+        background-repeat: no-repeat;
+        float: right;
+        margin-right: 100px;
+        border-radius: 50px;
+        /*text-align: center;*/
+        background-size: cover;
+        }
+      
+       .centeral3 div {
+         margin-top: 245px;
+         background-color: white;
+         opacity: 0.7;
+         width: 460px;
+          color: black;
+          border-radius: 50px;
+          padding: 40px;
+          margin-bottom: 0;
+          margin-left: 30px;
+       }
+       .centeral3 div p{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 490px;
+       }
+       .picture{
+         height:1000px; 
+
+         padding: 4px;
+         text-align: center;
+         margin-bottom: 0;
+       }
+       .picture h1{
+        font-size: 50px;
+        margin-top: 80px;
+        margin-bottom: 0;
+       }
+       .pop
+        {
+          margin-top: 0;
+          background-color: red;
+          width: 500px;
+         border-radius: 50px;
+         margin-top: 2%;
+         height: 790px;
+         margin-left: 240px;
+          background-image: url(popnight.jpeg ); 
+          background-size: cover;
+          background-position: center;
+          float: left;
+          background-repeat: no-repeat;
+          
+         
+
+        }
+
+        .pop h3{
+               color: white;
+               border:1px solid black;
+               width: 370px;
+               margin-top: 120%;
+               margin-left: 40px;
+               background-color: rgba(0,0,0,0.8);
+               border-radius: 30px;
+               padding: 30px;
+               visibility: hidden;
+                transition: visibility 0s, transform 0.3s;
+                transform: translateY(100%);
+        }
+        .pop:hover h3{
+          visibility: visible;
+           transform: translateY(0);
+        }
+        .guitar{
+           margin-top: 0;
+          background-color: red;
+          width: 480px;
+         border-radius: 50px;
+         margin-top: 2%;
+         height: 350px;
+         float: right;
+        margin-right: 280px;
+          background-image: url(guitar.jpeg ); 
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .guitar h3{
+               color: white;
+               border:1px solid black;
+               width: 370px;
+               margin-top: 33%;
+               margin-left: 25px;
+               background-color: rgba(0,0,0,0.8);
+               border-radius: 30px;
+               padding: 30px;
+              visibility: hidden;
+              transition: visibility 0s, transform 0.3s;
+                transform: translateY(100%);
+        }
+        .guitar:hover h3{
+          visibility: visible;
+           transform: translateY(0);
+        }
+        .girlguitar{
+           margin-top: 0;
+          background-color: red;
+          width: 480px;
+         border-radius: 50px;
+         margin-top: 2%;
+         height: 350px;
+         float: right;
+        margin-right: 280px;
+          background-image: url(girlguitar.jpeg ); 
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .girlguitar h3{
+               color: white;
+               border:1px solid black;
+               width: 370px;
+              margin-top: 33%;
+               margin-left: 25px;
+               background-color: rgba(0,0,0,0.8);
+               border-radius: 30px;
+               padding: 30px;
+              transition: visibility 0s, transform 0.3s;
+                transform: translateY(100%);
+              visibility: hidden;
+        }
+        .girlguitar:hover h3{
+          visibility: visible;
+           transform: translateY(0);
+        }
+	</style>
+</head>
+<body>
+      <nav >
+      	<div>
+        <ul class="upperclass">
+        <li style="margin-right: 270px;font-size: 25px;margin-left: 50px;font-weight: bold;"><a href="home.html">Festival İsmi</a></li>
+        	<li><a href="home.html">Homepage</a></li>
+          <li><a href="Calander.html">Calender</a></li>
+          <li><a href="price.html">Prices</a></li>
+          <li><a href="contactusweb.html">Contact Us</a></li>
+          <li><a href="getticket.html" id="get">Get Tickets</a></li>
+        </ul>
+
+        </div>
+      </nav>
+      
+      <div>
+        <div class="v1">
+          <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+
+          </video>
+          <div class="centeral">
+        <p>FESTIVAL ISMI PRESENTS</p>
+        <h1>Festival Live 2023</h1>
+        <a href="#centeral5"><button>lets start</button></a>
+        
+        <h2 style="margin-top: 245px;"><img src="clock.png" width="20px">&nbsp;10 - 12th, July 2023</h2>
+        <h2><i class="ri-map-pin-line" style="color: #ee5007;"></i>Isparta Center, Pakistan</h2>
+        <ul style="list-style-type: none;">
+          <li style="margin-top: 5px">Share:</li> 
+          <li class="icon"> <a href=""><i class="fa fa-facebook" style="color:#ffffff"></i></a></li>
+          <li class="icon"><a href=""><i class="fa fa-twitter" style="color: #ffffff"></i></a></li>
+          <li class="icon"><a href=""><i class="fa fa-instagram" style="color:#ffffff"></i></a></li>
+            </ul>
+       
+      </div>
+        </div>
+      </div>
+      <div class="centeral1" id="centeral5">
+            <div class="centeral2">
+                  <h1>"About "the name of the festival"</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellendus temporibus consectetur vel sunt illum provident earum praesentium quas corrupti.dolor sit amet consectetur adipisicing eli.</p>
+                  <h3>Once in a Lifetime Experience</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ipsam similique sed.</p>
+                  <h3>All Night Party</h3>
+                  <p>This Website is made by Web Students</p>
+              </div>
+              <div class="centeral3">
+                    <div>
+                      <p>
+                        <i class="ri-lightbulb-line" style="border-radius: 100%;border:1px solid orange;
+                      background-color: orange;padding: 15px;float: left;font-size: 30px;margin-top: 0"></i><span style="font-size: 30px;font-weight: bold;float: left;margin-left: 50px;margin-top: 0">it's a happy moment</span><br><span style=" margin-left: 49px;color: grey">Lorem, ipsum dolor sit amet consectetur adipisicing.</span></p>
+                      </div>
+              </div>
+        
+      </div>
+      <div  class="picture">
+        <h1>Meet the Artists</h1>
+        <div class="pop">
+          <h3><span style="float: left; margin-left: 20px;margin-right: 5px">Name:</span>John<br><span style="float: left;margin-left: 20px;margin-right: 66px"><br>Birthday:</span><br>August 16, 1958<br><span style="float: left;margin-left: 20px;margin-right: 28px"><br>Music:</span><br> Pop, R&B</h3>
+        </div>
+        <div class="guitar">
+          <h3><span style="float: left; margin-left: 20px;margin-right: 5px">Name:</span>John<br><span style="float: left;margin-left: 20px;margin-right: 66px"><br>Birthday:</span><br>August 16, 1958<br><span style="float: left;margin-left: 20px;margin-right: 28px"><br>Music:</span><br> Pop, R&B</h3>
+        </div>
+        
+        <div class=girlguitar>
+          <h3><span style="float: left; margin-left: 20px;margin-right: 5px">Name:</span>John<br><span style="float: left;margin-left: 20px;margin-right: 66px"><br>Birthday:</span><br>August 16, 1958<br><span style="float: left;margin-left: 20px;margin-right: 28px"><br>Music:</span><br> Pop, R&B</h3>
+        </div>
+      </div>
+  
+      	<div class="bottomdiv1">
+      	    <ul>
+      	    	<h1 style="float: left;	margin-right: 55%;color: white;font-size: 40px;margin-left: 4%;padding: 0">Festival Name</h1>
+      	    <li class="icon"><i class="fa fa-facebook" style="color:#ffffff"></i></li>
+              <li class="icon"><i class="fa fa-twitter" style="color: #ffffff"></i></li>
+              <li class="icon"><i class="fa fa-instagram" style="color:#ffffff"></i></li>
+              <li class="icon"><i class="fa fa-youtube" style="color: #ffffff;"></i></li>
+              <li class="icon"><i class="fa fa-pinterest" style="color: #ffffff"></i></li>
+      	    </ul> 
+      	</div>
+      	   
+      	 <div class="bottomdiv2">
+      	<h2 style="color: yellow;float: left;margin-top: 75px;margin-right: 35%;margin-left: 105px">Links</h2>
+      	
+      	<h2 style="color: yellow;float: left;margin-top: 75px;margin-right: 15%">Have a Question?</h2>
+      	<h2 style="color: yellow;;margin-top: 75px;">Women</h2>
+      	<ul>
+      		<li><a href="#">Home Page</a></li>
+      		<li><a href="#">My Home</a></li>
+      		<li><a href="#">Artists</a></li>
+      		<li><a href="#">Prices</a></li>
+      		<li><a href="#">Contact Us</a></li>
+      	</ul>
+        <a href="#" style="margin-left: 170px;text-decoration: none;font-size: 20px;color: white;float: left;margin-right: 16%;"><span style="font-size: 28px">050-080-0760</span><br><span style="margin-left: 2%">hello@company.com</span></a>
+        <p style="color: white;font-size: 20px">Sukkur Hall,Sindh</p>
+
+        <p style="color: white;margin-top: 90px;margin-left:35%;font-size: 20px">Copyright © 2023 Made by Web Team</p>
+        </div>
+    
+      
+</body>
+</html>
